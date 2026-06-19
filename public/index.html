@@ -127,6 +127,7 @@
             const messageList = document.querySelector('.messages')
             const li = document.createElement('li')
             if (id === myId) {
+              text = text.toUpperCase();
               li.textContent = `(${id})myself --> ` + text
             } else {
               li.textContent = id + ': ' + text
