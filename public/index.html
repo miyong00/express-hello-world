@@ -126,11 +126,10 @@
             const { id, text } = msg
             const messageList = document.querySelector('.messages')
             const li = document.createElement('li')
-            const text2 = text.toUpperCase();
             if (id === myId) {
-              li.textContent = `(${id})myself --> ` + text2
+              li.textContent = `(${id})myself --> ` + text.toUpperCase();
             } else {
-              li.textContent = id + ': ' + text2
+              li.textContent = id + ': ' + text.toUpperCase();
             }
             messageList.appendChild(li)
           }
