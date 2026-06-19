@@ -7,14 +7,6 @@ expressWs(app)
 const port = process.env.PORT || 3001
 let connects = []
 
-app.get('/', (req, res) => {
-  res.send('Hello World!')
-})
-
-app.get('/test', (req, res) => {
-  res.send('test is ok');
-})
-
 app.use(express.static('public'))
 
 app.ws('/ws', (ws, req) => {
